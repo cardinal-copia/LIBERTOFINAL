@@ -1,0 +1,262 @@
+a {
+    color: rgb(168,81,132);
+}
+
+body {
+    background-color: rgb(234,195,218);
+}
+
+h1 {
+    font-family: 'Kavoon', serif;
+    color: rgb(168,81,132);
+    font-size: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work {
+    font-family: 'Itim', cursive;
+    color: rgb(168,81,132);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    font-family: 'Kavoon', serif;
+    color: rgb(168,81,132);
+    background-color: rgb(253,222,241);
+    font-size: 20px;
+    border-radius: 8px;
+    border: 0;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+nav header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+nav header ul {
+    flex-grow: 1;
+}
+.bio {
+    display:flex;
+    gap: 25px;
+    align-items: center;
+}
+.stars {
+   height: 50%;
+   width: 50%;
+}
+.miles {
+    height: 1000px;
+    width: 800px;
+}
+.giogio1 {
+    height: 1000px;
+    width: 900px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 75%;
+}
+.home {
+    font-family: 'Itim', cursive;
+    color: rgb(168,81,132);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.about {
+    font-family: 'Itim', cursive;
+    color: rgb(168,81,132);
+    font-size: 20px;
+    justify-content: right;
+}
+.email {
+    font-family: 'Kavoon', serif;
+    color: rgb(168,81,132);
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+.msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 1000px;
+    height:300px;
+    border: 0;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.submit {
+    font-family: 'Kavoon', serif;
+    color: rgb(168,81,132);
+    background-color: rgb(253,222,241);
+    font-size: 20px;
+    border-radius: 8px;
+    border: 0;
+}
+header ul {
+    font-family: 'Itim', cursive;
+    list-style: none;
+    color: rgb(168,81,132);
+    background-color: rgb(228,177,207);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding-right: 15px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+footer p {
+    font-family: 'Itim', cursive;
+    font-size: 15px;
+    color: rgb(168,81,132);
+    background-color: rgb(228,177,207);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+/* max-height: 1000px; */
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgb(168,81,132);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-family: 'Itim', cursive;
+  font-size: 30px;
+  padding: 5px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(168,81,132);
+  font-family: 'Itim', cursive;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color:rgb(253,222,241);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color:  rgb(228,177,207);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media (min-width: 300px) {
+    header {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    h1 {
+     font-size: 50px;
+    }
+    .giogio1 {
+        height: 50%;
+        width:50%;
+    }
+    .miles {
+        height: 50%;
+        width: 50%;
+    }
+    .about {
+        flex-wrap: nowrap;
+    }
+   .msg {
+    width: 700px;
+    height: 200px;
+   }
+   .prev, .next {
+    font-size: 11px
+}
+.text {
+    font-size: 8px;
+    padding: .75px;
+}
+footer p {
+   font-size: 12px;
+}
+}
